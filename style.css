@@ -16,17 +16,11 @@ body {
   border-radius: 20px;
   padding: 2rem;
   box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+  text-align: center;
 }
 
-h1, h2 {
+h1 {
   text-align: center;
   font-weight: 600;
-}
-
-.pomodoro-section, .data-section {
   margin-bottom: 2rem;
-}
-
-#content-list p {
-  margin: 0.5rem 0;
 }
