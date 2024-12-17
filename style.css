@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(120deg, #f3f4f6, #e7ebef);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #333;
+}
+
+.app-container {
+  width: 350px;
+  background: rgba(255,255,255,0.3);
+  backdrop-filter: blur(12px) saturate(150%);
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+}
+
+h1, h2 {
+  text-align: center;
+  font-weight: 600;
+}
+
+.pomodoro-section, .data-section {
+  margin-bottom: 2rem;
+}
+
+#content-list p {
+  margin: 0.5rem 0;
+}
