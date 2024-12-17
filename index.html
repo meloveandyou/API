@@ -1,34 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>My Pomodoro App</title>
-  <link href="style.css" rel="stylesheet"/>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link 
-    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" 
-    rel="stylesheet"
-  />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>My Pomodoro App</title>
+<link href="style.css" rel="stylesheet"/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link 
+  href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" 
+  rel="stylesheet"
+/>
 </head>
 <body>
   <div class="app-container">
     <h1>My Pomodoro App</h1>
-
-    <!-- Pomodoro Timer Section -->
-    <section class="pomodoro-section">
-      <h2>Focus Timer</h2>
-      <div id="pomodoro-container"></div>
-    </section>
-
-    <!-- GROQ Data Section -->
-    <section class="data-section">
-      <h2>Your Content</h2>
-      <div id="content-list">Loading...</div>
-    </section>
+    <!-- Container for the Pomodoro timer (inserted by pomodoro.js) -->
+    <section id="pomodoro-container"></section>
   </div>
 
-  <script src="pomodoro.js"></script>
-  <script src="script.js"></script>
+<script src="pomodoro.js"></script>
 </body>
 </html>
