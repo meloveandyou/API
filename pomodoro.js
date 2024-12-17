@@ -1,7 +1,6 @@
 (function() {
   const container = document.getElementById('pomodoro-container');
 
-  // Insert the Pomodoro markup
   container.innerHTML = `
     <div class="timer-wrapper">
       <svg width="180" height="180">
@@ -21,75 +20,6 @@
       <button class="mode-btn" data-minutes="15">Long Break</button>
     </div>
   `;
-
-  // Add styles just for the timer elements
-  const styleEl = document.createElement('style');
-  styleEl.textContent = `
-    .timer-wrapper {
-      position: relative;
-      width: 180px;
-      height: 180px;
-      margin: 1rem auto;
-    }
-
-    .progress-ring-bg, .progress-ring {
-      fill: none;
-      stroke-linecap: round;
-      stroke-width: 12;
-    }
-
-    .progress-ring-bg {
-      stroke: rgba(255,255,255,0.25);
-    }
-
-    .progress-ring {
-      stroke: #ffffff; 
-      transition: stroke-dashoffset 1s linear;
-    }
-
-    .timer {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      font-size: 2.5rem;
-      font-weight: 500;
-      color: #333;
-      text-shadow: 0 1px 3px rgba(0,0,0,0.1);
-    }
-
-    .controls, .mode-switch {
-      display: flex;
-      justify-content: center;
-      gap: 0.7rem;
-      margin-bottom: 1rem;
-    }
-
-    button {
-      background: rgba(255, 255, 255, 0.5);
-      border: 1px solid rgba(255,255,255,0.5);
-      border-radius: 10px;
-      padding: 0.6rem 0.9rem;
-      font-size: 0.85rem;
-      font-weight: 500;
-      cursor: pointer;
-      color: #333;
-      transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
-    }
-
-    button:hover {
-      background: rgba(255,255,255,0.7);
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-      transform: translateY(-1px);
-    }
-
-    .mode-btn.active {
-      font-weight: 600;
-      background: rgba(255,255,255,0.7);
-      box-shadow: 0 0 8px rgba(255,255,255,0.4), 0 2px 8px rgba(0,0,0,0.1);
-    }
-  `;
-  document.head.appendChild(styleEl);
 
   const timeDisplay = document.getElementById('time-display');
   const startBtn = document.getElementById('start-btn');
